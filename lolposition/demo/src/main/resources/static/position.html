@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <title>롤 포지션 배정</title>
+
+    <link rel="stylesheet" href="/css/position.css" />
+</head>
+<body>
+<h1>롤 포지션 배정</h1>
+<p class="small">
+    카드를 하나 선택 → 오른쪽 친구 이름 클릭하면 교체돼요. 새 친구는
+    오른쪽에서 추가하세요.
+</p>
+<button id="shuffleBtn">포지션 섞기 🔁</button>
+
+<div class="wrap">
+    <!-- 현재 배정되는 애들 -->
+    <div class="container" id="playerContainer"></div>
+
+    <!-- 대기 친구들 -->
+    <div class="friends-box" id="friendsBox">
+        <h3>대기 친구</h3>
+        <!-- 입력영역 추가 -->
+        <div class="friend-input-wrap">
+            <input type="text" id="newFriendInput" placeholder="이름" />
+            <button id="addFriendBtn">추가</button>
+        </div>
+        <div id="friendsList"></div>
+    </div>
+</div>
+
+<script src="/js/position.js"></script>
+</body>
+</html>
